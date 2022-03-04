@@ -1,0 +1,170 @@
+* {
+    user-select: none;
+    outline: none;
+}
+
+table label {
+    margin-top: 13px;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    margin-left: -15px;
+}
+
+.thumbnail img {
+    /* display: block;
+    margin: 0*auto; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    padding: 5px;
+}
+
+.form-user {
+    display: block;
+    width: 300px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: #ccc;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 3px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #ccc;
+    top: 140%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-save {
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.btn-load {
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #f0aa54;
+    color: white;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-delete {
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #d9534f;
+    color: white;
+}
+input[type=file] {
+    margin: 8px 0px;
+}
+
+td img {
+    margin: 8px 0px;
+    width: 125px;
+    height: 120px;
+}
+
+::-webkit-scrollbar {
+    background-color: #fff;
+    width: 7px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+.fa {
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.green {
+    color: #5cb85c;
+}
+
+.red {
+    color: #d9534f;
+}
